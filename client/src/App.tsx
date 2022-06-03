@@ -1,11 +1,17 @@
+// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import "./App.css";
+import { Sidebar } from "./components/sidebar";
+
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <h1>Hello Vite + React!</h1>
-      </header>
-    </div>
-  )
+    // <Router>
+    //   <Switch>
+    //     <Route path="/">
+          <Sidebar />
+    //     </Route>
+    //   </Switch>
+    // </Router>
+  );
 }
 
 export default App
