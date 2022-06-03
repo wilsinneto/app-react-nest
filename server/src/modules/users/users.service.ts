@@ -7,6 +7,10 @@ import { User } from './entities/user.entity';
 export class UsersService {
   private users: User[] = [];
 
+  findOneByEmail(email: string) {
+    return this.users.find((user) => user.email === email);
+  }
+
   create(createUserDto: CreateUserDto) {
     const currentMaxId = this.users[this.users.length - 1]?.id || 0;
 
