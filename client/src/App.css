@@ -1,55 +1,18 @@
-.App {
-    width: 100vh;
-    height: 100vh;
-    background-color: aqua;
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-        sans-serif;
-    -webkit-font-smoothing: antialiased;
-    -moz-osx-font-smoothing: grayscale;
-}
-
-.sidebar {
-    width: 200px;
-    height: 100vh;
-    background-color: #2F4050;
-}
-
-.sidebar-list {
-    list-style: none;
-    padding: 0;
-    margin: 0;
-    height: auto;
-    width: auto;
-}
-
-.sidebar-list .row {
-    width: auto;
-    height: auto;
-    padding: 0;
-    margin: 0;
-    border: 1px solid black;
-    color: lavenderblush;
-    justify-content: center;
-    align-items: center;
-    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
-}
-
-.sidebar-list .row:hover {
-    cursor: pointer;
-    background-color: #293846;
-}
-
-.sidebar-list .row .active {
-    background-color: #293846;
-}
-
-
-.row #icon {
-    margin-right: 5px;
+.home,
+.reports,
+.products {
+  display: flex;
+  height: 90vh;
+  align-items: center;
+  justify-content: center;
+  font-size: 3rem;
 }

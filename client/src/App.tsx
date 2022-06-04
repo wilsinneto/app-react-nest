@@ -1,17 +1,11 @@
-// import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
-import "./App.css";
-import { Sidebar } from "./components/sidebar";
+import React from 'react';
+import './App.css';
+import { RouteList } from "./routes";
 
 function App() {
   return (
-    // <Router>
-    //   <Switch>
-    //     <Route path="/">
-          <Sidebar />
-    //     </Route>
-    //   </Switch>
-    // </Router>
+    <RouteList />
   );
 }
 
-export default App
+export default App;
